@@ -202,6 +202,7 @@ def serve_processed_video(filename):
 
 @app.route('/api/test', methods=['GET'])
 def test():
+    print("Got req")
     return jsonify({'message': 'API is working!'})
 
 if __name__ == '__main__':
